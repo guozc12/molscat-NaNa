@@ -1,0 +1,1296 @@
+  ---- MOLSCAT ------ MOLSCAT ------ MOLSCAT ------ MOLSCAT ------ MOLSCAT ---
+ |                                                                            |
+ |                Non-reactive quantum scattering calculations                |
+ |                     on atomic and molecular collisions                     |
+ |                                                                            |
+ |              Copyright (C) 2020 J. M. Hutson & C. R. Le Sueur              |
+ |                                                                            |
+ |                               Version 2020.01                              |
+ |                                                                            |
+ |                       Run on 24 May 2021   at 20:34:15                     |
+ |                                                                            |
+  ---- MOLSCAT ------ MOLSCAT ------ MOLSCAT ------ MOLSCAT ------ MOLSCAT ---
+
+
+  This program is free software: you can redistribute it and/or modify it under
+  the terms of the GNU General Public License, version 3, as published by
+  the Free Software Foundation.
+
+  Publications resulting from the use of this program should cite both
+  the version of the program used:
+  J. M. Hutson & C. R. Le Sueur, MOLSCAT computer code 2020.01             
+  and the published paper:
+  J. M. Hutson & C. R. Le Sueur, Comput. Phys. Commun. 241, pp 9-18 (2019).
+
+
+  USING CODATA 2018 RECOMMENDED VALUES OF FUNDAMENTAL PHYSICAL CONSTANTS
+
+  MEMORY ALLOCATED TO MAIN WORKING ARRAY IS   1000000 (8-BYTE) WORDS (    7.63 MB)
+  2 INTEGERS CAN BE STORED IN EACH WORD.
+
+  PRINT LEVEL (IPRINT) =  6     OTHER PRINT CONTROLS  ISIGPR = 0
+
+  REDUCED MASS FOR INTERACTION =  11.494884500 ATOMIC MASS UNITS (DALTONS)
+
+  NO SCRATCH FILE SPECIFIED BY ISCRU PARAMETER: FULL CALCULATION WILL BE DONE AT EVERY ENERGY
+
+  ======================================================================================================================
+  ATOM - ATOM IN UNCOUPLED BASIS  
+
+
+  ATOMS  WITH S = 1/2,     MU_S   =    2.002296 MU_B
+              I = 3/2,     MU_NUC =   -0.000805 MU_B
+              HYPERFINE SPLITTING =    1.771626, COUPLING CONST =    0.885813 GHZ
+
+  L UP TO    0
+  SPIN-SPIN TERM INCLUDED
+
+  INTERACTION TYPE IS  ATOM - ATOM IN UNCOUPLED BASIS  
+
+  QUANTUM NUMBERS FOR INTERACTING PAIR:
+  THE BASIS FUNCTIONS ARE LABELLED BY A SET OF   4 PAIR STATE QUANTUM NUMBERS AND A VALUE OF L.
+  THE RESULTING BASIS SET IS ASYMPTOTICALLY NON-DIAGONAL.
+
+  THE SETS OF PAIR STATE QUANTUM NUMBERS ARE:
+
+      SET       ------ PAIR STATE QUANTUM NUMBERS ------
+                    2*MSA     2*MIA     2*MSB     2*MIB
+        1              -1        -3        -1        -3
+        2              -1        -1        -1        -3
+        3              -1        -1        -1        -1
+        4              -1         1        -1        -3
+        5              -1         1        -1        -1
+        6              -1         1        -1         1
+        7              -1         3        -1        -3
+        8              -1         3        -1        -1
+        9              -1         3        -1         1
+       10              -1         3        -1         3
+       11               1        -3        -1        -3
+       12               1        -3        -1        -1
+       13               1        -3        -1         1
+       14               1        -3        -1         3
+       15               1        -3         1        -3
+       16               1        -1        -1        -3
+       17               1        -1        -1        -1
+       18               1        -1        -1         1
+       19               1        -1        -1         3
+       20               1        -1         1        -3
+       21               1        -1         1        -1
+       22               1         1        -1        -3
+       23               1         1        -1        -1
+       24               1         1        -1         1
+       25               1         1        -1         3
+       26               1         1         1        -3
+       27               1         1         1        -1
+       28               1         1         1         1
+       29               1         3        -1        -3
+       30               1         3        -1        -1
+       31               1         3        -1         1
+       32               1         3        -1         3
+       33               1         3         1        -3
+       34               1         3         1        -1
+       35               1         3         1         1
+       36               1         3         1         3
+
+  ======================================================================================================================
+
+  THIS CALCULATION USES  1 EXTERNAL FIELD VARIABLE 
+
+  OFFSET BETWEEN EFV INDICES AND COUPLING MATRIX COEFFICIENT INDICES IS  1
+  GENERAL-PURPOSE POTENL ROUTINE (MAY 18)
+
+  *** POTENL. ITYPE =   9 CANNOT BE PROCESSED TO DETERMINE THE POTENTIAL EXPANSION LABELS
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER   1
+
+  JMH routine for Tiemann-style alkali dimer potentials
+  Na2 potential from S. Knoop et al., PhysRevA.83.042704 (2011)          
+
+  input gamma and beta unchanged
+  beta  =   2.365940000000     A-1
+  gamma =   4.591050000000    
+
+  For potential  1 at RLR =  11.00000000000     A
+                  with C6 =  7518613.100000     and C8 =  168643000.0000    
+  V_LR  =  -5.161798312500    cm-1
+  V_mid =  -5.161800576967    cm-1, dV/dR =   3.199497570770    cm-1/A
+  A(0) shifted from  -6022.041930000     cm-1
+                 to  -6022.041927736     cm-1 to match value of V(R) at RLR
+  Derivative discontinuity at RLR (intrinsic to functional form) is -0.1766505598348     cm-1/A
+  Discontinuity / value is -5.8438471810121E-02
+
+  For potential  1 at RSR =  2.181000000000     A
+  V     =  -24.65101757210    cm-1, dV/dR =  -27963.16422720    cm-1/A and n =   6.000000000000    
+  B(SR) not shifted to match dV/dR
+  Derivative discontinuity at RSR is   251432.1059061     cm-1/A
+  Discontinuity / value is  0.2298243343439    
+  A(SR) shifted from  -7853.186440000     cm-1
+                  to  -7853.186441863     cm-1
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER   2
+
+  JMH routine for Tiemann-style alkali dimer potentials
+  Na2 potential from S. Knoop et al., PhysRevA.83.042704 (2011)          
+
+  input gamma and beta unchanged
+  beta  =   2.365940000000     A-1
+  gamma =   4.591050000000    
+
+  For potential  2 at RLR =  11.00000000000     A
+                  with C6 =  7518613.100000     and C8 =  168643000.0000    
+  V_LR  =  -5.137433816503    cm-1
+  V_mid =  -5.137430886566    cm-1, dV/dR =   2.970297796427    cm-1/A
+  A(0) shifted from  -172.9051700000     cm-1
+                 to  -172.9051729299     cm-1 to match value of V(R) at RLR
+  Derivative discontinuity at RLR (intrinsic to functional form) is -2.8807669700770E-03 cm-1/A
+  Discontinuity / value is -9.7079950053536E-04
+
+  For potential  2 at RSR =  4.278000000000     A
+  V     = -0.7630794404553    cm-1, dV/dR =  -468.4885855996    cm-1/A and n =   6.000000000000    
+  B(SR) not shifted to match dV/dR
+  Derivative discontinuity at RSR is   559118.9159695     cm-1/A
+  Discontinuity / value is  0.2730680947103    
+  A(SR) shifted from  -243.5819000000     cm-1
+                  to  -243.5818604377     cm-1
+
+  INTERACTION POTENTIAL FOR EXPANSION TERM NUMBER   3
+
+                -1.00232065E+00 * R ** -3
+                 9.18291680E+00 * EXP(   -0.7196 * R )
+
+  POTENL PROCESSING FINISHED.
+
+  POTENTIAL RETURNED IN UNITS OF EPSIL  =  1.0000000     CM-1
+        CODED WITH R IN UNITS OF RM     = 0.52917721     ANGSTROM
+
+  ALL LENGTHS ARE IN UNITS OF BOHR (  0.52917721 ANGSTROM ) UNLESS OTHERWISE STATED
+
+  INTERACTION MATRIX USES   3 BLOCKS OF VL ARRAY FOR R-DEPENDENT TERMS IN POTENTIAL
+                            2                    FOR CONSTANT    TERMS IN POTENTIAL
+
+  IN TOTAL:  5 BLOCKS OF VL ARRAY ARE USED
+
+
+  ======================================================================================================================
+
+  PROPAGATION METHODS FOR COUPLED EQUATIONS SPECIFIED BY IPROPS =  6 AND IPROPL =  9
+
+  COUPLED EQUATIONS WILL BE PROPAGATED OUTWARDS IN 2 SEGMENTS
+
+  PROPAGATION RANGES ARE CONTROLLED BY VARIABLES RMIN, RMID AND RMAX, WITH INPUT VALUES
+  RMIN =   1.500     RMID =   30.00     RMAX =  1.5000E+04
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  SEGMENT 1 WILL BE PROPAGATED OUTWARDS
+
+  FROM RMIN =      1.50 TO RMID =     30.00
+
+  COUPLED EQUATIONS SOLVED BY DIABATIC MODIFIED LOG-DERIVATIVE PROPAGATOR OF MANOLOPOULOS
+
+  PROPAGATION STEP SIZE DETERMINED USING DR =  2.000E-03
+  STEP SIZE CONSTANT THROUGHOUT RANGE
+  STEP SIZE MAY BE ADJUSTED SLIGHTLY SO THAT RANGE IS A WHOLE NUMBER OF STEPS
+
+  LOG-DERIVATIVE MATRIX INITIALISED IN THE LOCAL EIGENBASIS AT RMIN
+  LOCALLY CLOSED CHANNELS INITIALISED WITH A WKB BOUNDARY CONDITION
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  SEGMENT 2 WILL BE PROPAGATED OUTWARDS
+
+  FROM RMID =     30.00 TO RMAX =  15000.00
+
+  COUPLED EQUATIONS SOLVED BY VARIABLE-STEP AIRY PROPAGATOR.
+  PUBLICATIONS RESULTING FROM THE USE OF THIS PROPAGATOR SHOULD REFERENCE
+  M. H. ALEXANDER AND D. E. MANOLOPOULOS,  J. CHEM. PHYS. 86, 2044 (1987).
+
+  INITIAL STEP SIZE TAKEN FROM SIZE OF FINAL STEP OF PREVIOUS SEGMENT
+  STEP SIZES ADJUSTED TO MAINTAIN APPROXIMATE ACCURACY VIA PERTURBATION THEORY
+  WITH TOLHI =  1.00E-07 AND POWR =   3.0    
+
+  ======================================================================================================================
+
+  INPUT ENERGIES CONVERTED FROM K
+  TO INTERNAL WORKING UNITS OF CM-1 DUE TO INTEGER INPUT EUNITS =   2
+
+  INPUT ENERGY LIST IS
+                    6.950348E-08    1.390070E-07
+
+  CALCULATIONS WILL BE PERFORMED FOR    2 ENERGIES
+  ENERGY    1           =  6.9503480040E-08 CM-1 =  1.0000000000E-07 K       
+  ENERGY    2           =  1.3900696008E-07 CM-1 =  2.0000000000E-07 K       
+
+  ======================================================================================================================
+
+  CONTROL DATA FOR EXTERNAL FIELD VARIABLES.  CALCULATIONS WILL BE PERFORMED FOR  31 SETS
+
+                  MAGNETIC Z FIELD (GAUSS )
+  SET     1:          348.0000000    
+  SET     2:          348.1000000    
+  SET     3:          348.2000000    
+  SET     4:          348.3000000    
+  SET     5:          348.4000000    
+  SET     6:          348.5000000    
+  SET     7:          348.6000000    
+  SET     8:          348.7000000    
+  SET     9:          348.8000000    
+  SET    10:          348.9000000    
+  SET    11:          349.0000000    
+  SET    12:          349.1000000    
+  SET    13:          349.2000000    
+  SET    14:          349.3000000    
+  SET    15:          349.4000000    
+  SET    16:          349.5000000    
+  SET    17:          349.6000000    
+  SET    18:          349.7000000    
+  SET    19:          349.8000000    
+  SET    20:          349.9000000    
+  SET    21:          350.0000000    
+  SET    22:          350.1000000    
+  SET    23:          350.2000000    
+  SET    24:          350.3000000    
+  SET    25:          350.4000000    
+  SET    26:          350.5000000    
+  SET    27:          350.6000000    
+  SET    28:          350.7000000    
+  SET    29:          350.8000000    
+  SET    30:          350.9000000    
+  SET    31:          351.0000000    
+
+  ======================================================================================================================
+
+  TOTAL ANGULAR MOMENTUM JTOT =   4
+
+  EACH JTOT IS SPLIT INTO A MAXIMUM OF   2 SYMMETRY BLOCKS
+
+  CALCULATION(S) WILL BE FOR SYMMETRY BLOCK   2
+
+  EIGENPHASE SUMMARY WILL BE WRITTEN TO UNIT  1
+
+  ======================================================================================================================
+
+  THESE ENERGY VALUES ARE RELATIVE TO THE REFERENCE ENERGY SPECIFIED BY MONOMER QUANTUM NUMBERS   2   2   2   2
+  THE REFERENCE ENERGY WILL BE CALCULATED FOR EVERY EFV SET
+
+  INITIALIZATION DONE.  TIME WAS   0.00 CPU SECS.       182 WORDS OF STORAGE USED.
+
+  ================================== 23Na-23Na scattering length of Na|1,1> + Na|1,1> ==================================
+
+  *****************************  ANGULAR MOMENTUM JTOT  =   4   AND SYMMETRY BLOCK  =    2  ****************************
+  SYMMETRY BLOCK =   2 SELECTS PARITY  1
+  MTOT =  4/2
+  BASIS SET GENERATED FOR TWO IDENTICAL BOSONS
+  * * * NOTE.  FOR JTOT =   4,  ALL COUPLING COEFFICIENTS ARE 0.0 FOR POTENTIAL SYMMETRY   3
+
+  BASIS FUNCTION LIST:
+  BASIS FN        SET   ------ PAIR STATE QUANTUM NUMBERS ------           L 
+                            2*MSA     2*MIA     2*MSB     2*MIB 
+        1          10         -1         3        -1         3             0
+        2          25          1         1        -1         3             0
+        3          28          1         1         1         1             0
+        4          31          1         3        -1         1             0
+        5          34          1         3         1        -1             0
+
+  ----------------------------------------------------------------------------------------------------------------------
+
+  EFV SET     1:  MAGNETIC Z FIELD =   348.0000000     GAUSS
+  REFERENCE ENERGY IS                          -9.5264501590E-02 CM-1    = -0.1370643622     K       
+
+  THRESHOLDS CALCULATED FROM ASYMPTOTIC HAMILTONIAN:
+
+  THRESHOLD       L           ENERGY/CM-1                ENERGY/K
+          1       0        -9.526450159020E-02        -0.137064362152    
+          2       0        -1.479991650345E-02        -2.129377765680E-02
+          3       0        -2.712150556876E-03        -3.902179510026E-03
+          4       0         6.475154713866E-02         9.316302881725E-02
+          5       0         6.566466858329E-02         9.447680683830E-02
+
+  K-DEPENDENT SCATTERING LENGTHS/VOLUMES/HYPERVOLUMES FOR CHANNELS WITH LOW KINETIC ENERGY
+  CHAN   L POW     WVEC*BOHR             RE(A)/BOHR            IM(A)/BOHR      
+    1    0   1 1.1520158795185E-004   6.0026133010639E+001   3.7233643399852E-014
+
+  S-MATRIX EIGENPHASE SUM, EPSUM/PI =  9.99780
+
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+  K-DEPENDENT SCATTERING LENGTHS/VOLUMES/HYPERVOLUMES FOR CHANNELS WITH LOW KINETIC ENERGY
+  CHAN   L POW     WVEC*BOHR             RE(A)/BOHR            IM(A)/BOHR      
+    1    0   1 1.6291964812036E-004   6.0027875936967E+001   1.7801663856136E-014
+
+  S-MATRIX EIGENPHASE SUM, EPSUM/PI =  9.99689
+
+  EFFECTIVE RANGE AT EFV SET   1 FOR CHANNEL   1:
+  FROM EXPANSION OF 1/A AT ENERGIES 1 AND   2 IS   72.895     BOHR WITH 1/A(K=0) =   0.1665989437E-01 BOHR^-1
+  FROM EXPANSION OF  A  AT ENERGIES 1 AND   2 IS   72.902     BOHR WITH   A(K=0) =    60.02439008     BOHR
+
+  ----------------------------------------------------------------------------------------------------------------------
+
+  EFV SET     2:  MAGNETIC Z FIELD =   348.1000000     GAUSS
+  REFERENCE ENERGY IS                          -9.5271725751E-02 CM-1    = -0.1370747561     K       
+
+  THRESHOLDS CALCULATED FROM ASYMPTOTIC HAMILTONIAN:
+
+  THRESHOLD       L           ENERGY/CM-1                ENERGY/K
+          1       0        -9.527172575073E-02        -0.137074756107    
+          2       0        -1.479992401634E-02        -2.129378846616E-02
+          3       0        -2.709738057674E-03        -3.898708461957E-03
+          4       0         6.475847137890E-02         9.317299125400E-02
+          5       0         6.567187771805E-02         9.448717917471E-02
+
+  K-DEPENDENT SCATTERING LENGTHS/VOLUMES/HYPERVOLUMES FOR CHANNELS WITH LOW KINETIC ENERGY
+  CHAN   L POW     WVEC*BOHR             RE(A)/BOHR            IM(A)/BOHR      
+    1    0   1 1.1520158796691E-004   6.0027263483641E+001  -5.6809246115129E-013
+
+  S-MATRIX EIGENPHASE SUM, EPSUM/PI =  9.99780
+
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+  K-DEPENDENT SCATTERING LENGTHS/VOLUMES/HYPERVOLUMES FOR CHANNELS WITH LOW KINETIC ENERGY
+  CHAN   L POW     WVEC*BOHR             RE(A)/BOHR            IM(A)/BOHR      
+    1    0   1 1.6291964814166E-004   6.0029006081553E+001   6.5716422637895E-014
+
+  S-MATRIX EIGENPHASE SUM, EPSUM/PI =  9.99689
+
+  EFFECTIVE RANGE AT EFV SET   2 FOR CHANNEL   1:
+  FROM EXPANSION OF 1/A AT ENERGIES 1 AND   2 IS   72.879     BOHR WITH 1/A(K=0) =   0.1665958052E-01 BOHR^-1
+  FROM EXPANSION OF  A  AT ENERGIES 1 AND   2 IS   72.885     BOHR WITH   A(K=0) =    60.02552089     BOHR
+
+  ----------------------------------------------------------------------------------------------------------------------
+
+  EFV SET     3:  MAGNETIC Z FIELD =   348.2000000     GAUSS
+  REFERENCE ENERGY IS                          -9.5278950351E-02 CM-1    = -0.1370851507     K       
+
+  THRESHOLDS CALCULATED FROM ASYMPTOTIC HAMILTONIAN:
+
+  THRESHOLD       L           ENERGY/CM-1                ENERGY/K
+          1       0        -9.527895035083E-02        -0.137085150695    
+          2       0        -1.479993152922E-02        -2.129379927552E-02
+          3       0        -2.707326055708E-03        -3.895238129300E-03
+          4       0         6.476539611637E-02         9.318295440616E-02
+          5       0         6.567908729238E-02         9.449755214355E-02
+
+  K-DEPENDENT SCATTERING LENGTHS/VOLUMES/HYPERVOLUMES FOR CHANNELS WITH LOW KINETIC ENERGY
+  CHAN   L POW     WVEC*BOHR             RE(A)/BOHR            IM(A)/BOHR      
+    1    0   1 1.1520158795185E-004   6.0028391956646E+001  -8.9596027846216E-013
+
+  S-MATRIX EIGENPHASE SUM, EPSUM/PI =  9.99780
+
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+  K-DEPENDENT SCATTERING LENGTHS/VOLUMES/HYPERVOLUMES FOR CHANNELS WITH LOW KINETIC ENERGY
+  CHAN   L POW     WVEC*BOHR             RE(A)/BOHR            IM(A)/BOHR      
+    1    0   1 1.6291964813101E-004   6.0030135076624E+001   6.0733620469700E-013
+
+  S-MATRIX EIGENPHASE SUM, EPSUM/PI =  9.99689
+
+  EFFECTIVE RANGE AT EFV SET   3 FOR CHANNEL   1:
+  FROM EXPANSION OF 1/A AT ENERGIES 1 AND   2 IS   72.898     BOHR WITH 1/A(K=0) =   0.1665926747E-01 BOHR^-1
+  FROM EXPANSION OF  A  AT ENERGIES 1 AND   2 IS   72.904     BOHR WITH   A(K=0) =    60.02664884     BOHR
+
+  ----------------------------------------------------------------------------------------------------------------------
+
+  EFV SET     4:  MAGNETIC Z FIELD =   348.3000000     GAUSS
+  REFERENCE ENERGY IS                          -9.5286175390E-02 CM-1    = -0.1370955459     K       
+
+  THRESHOLDS CALCULATED FROM ASYMPTOTIC HAMILTONIAN:
+
+  THRESHOLD       L           ENERGY/CM-1                ENERGY/K
+          1       0        -9.528617539037E-02        -0.137095545914    
+          2       0        -1.479993904211E-02        -2.129381008489E-02
+          3       0        -2.704914550878E-03        -3.891768511910E-03
+          4       0         6.477232135098E-02         9.319291827359E-02
+          5       0         6.568629730616E-02         9.450792574466E-02
+
+  K-DEPENDENT SCATTERING LENGTHS/VOLUMES/HYPERVOLUMES FOR CHANNELS WITH LOW KINETIC ENERGY
+  CHAN   L POW     WVEC*BOHR             RE(A)/BOHR            IM(A)/BOHR      
+    1    0   1 1.1520158795185E-004   6.0029519793148E+001   6.8532255805952E-013
+
+  S-MATRIX EIGENPHASE SUM, EPSUM/PI =  9.99780
+
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+  K-DEPENDENT SCATTERING LENGTHS/VOLUMES/HYPERVOLUMES FOR CHANNELS WITH LOW KINETIC ENERGY
+  CHAN   L POW     WVEC*BOHR             RE(A)/BOHR            IM(A)/BOHR      
+    1    0   1 1.6291964812036E-004   6.0031263565176E+001   2.5296663451641E-013
+
+  S-MATRIX EIGENPHASE SUM, EPSUM/PI =  9.99689
+
+  EFFECTIVE RANGE AT EFV SET   4 FOR CHANNEL   1:
+  FROM EXPANSION OF 1/A AT ENERGIES 1 AND   2 IS   72.922     BOHR WITH 1/A(K=0) =   0.1665895465E-01 BOHR^-1
+  FROM EXPANSION OF  A  AT ENERGIES 1 AND   2 IS   72.929     BOHR WITH   A(K=0) =    60.02777602     BOHR
+
+  ----------------------------------------------------------------------------------------------------------------------
+
+  EFV SET     5:  MAGNETIC Z FIELD =   348.4000000     GAUSS
+  REFERENCE ENERGY IS                          -9.5293400869E-02 CM-1    = -0.1371059418     K       
+
+  THRESHOLDS CALCULATED FROM ASYMPTOTIC HAMILTONIAN:
+
+  THRESHOLD       L           ENERGY/CM-1                ENERGY/K
+          1       0        -9.529340086923E-02        -0.137105941766    
+          2       0        -1.479994655499E-02        -2.129382089425E-02
+          3       0        -2.702503543085E-03        -3.888299609645E-03
+          4       0         6.477924708262E-02         9.320288285614E-02
+          5       0         6.569350775925E-02         9.451829997785E-02
+
+  K-DEPENDENT SCATTERING LENGTHS/VOLUMES/HYPERVOLUMES FOR CHANNELS WITH LOW KINETIC ENERGY
+  CHAN   L POW     WVEC*BOHR             RE(A)/BOHR            IM(A)/BOHR      
+    1    0   1 1.1520158795185E-004   6.0030651410875E+001   9.4984024268690E-013
+
+  S-MATRIX EIGENPHASE SUM, EPSUM/PI =  9.99780
+
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+  K-DEPENDENT SCATTERING LENGTHS/VOLUMES/HYPERVOLUMES FOR CHANNELS WITH LOW KINETIC ENERGY
+  CHAN   L POW     WVEC*BOHR             RE(A)/BOHR            IM(A)/BOHR      
+    1    0   1 1.6291964812036E-004   6.0032393985579E+001  -3.0054865192627E-013
+
+  S-MATRIX EIGENPHASE SUM, EPSUM/PI =  9.99689
+
+  EFFECTIVE RANGE AT EFV SET   5 FOR CHANNEL   1:
+  FROM EXPANSION OF 1/A AT ENERGIES 1 AND   2 IS   72.869     BOHR WITH 1/A(K=0) =   0.1665864027E-01 BOHR^-1
+  FROM EXPANSION OF  A  AT ENERGIES 1 AND   2 IS   72.876     BOHR WITH   A(K=0) =    60.02890884     BOHR
+
+  ----------------------------------------------------------------------------------------------------------------------
+
+  EFV SET     6:  MAGNETIC Z FIELD =   348.5000000     GAUSS
+  REFERENCE ENERGY IS                          -9.5300626787E-02 CM-1    = -0.1371163383     K       
+
+  THRESHOLDS CALCULATED FROM ASYMPTOTIC HAMILTONIAN:
+
+  THRESHOLD       L           ENERGY/CM-1                ENERGY/K
+          1       0        -9.530062678731E-02        -0.137116338250    
+          2       0        -1.479995406787E-02        -2.129383170362E-02
+          3       0        -2.700093032228E-03        -3.884831422360E-03
+          4       0         6.478617331121E-02         9.321284815368E-02
+          5       0         6.570071865156E-02         9.452867484297E-02
+
+  K-DEPENDENT SCATTERING LENGTHS/VOLUMES/HYPERVOLUMES FOR CHANNELS WITH LOW KINETIC ENERGY
+  CHAN   L POW     WVEC*BOHR             RE(A)/BOHR            IM(A)/BOHR      
+    1    0   1 1.1520158798196E-004   6.0031781040621E+001   1.3615866938301E-012
+
+  S-MATRIX EIGENPHASE SUM, EPSUM/PI =  9.99780
+
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+  K-DEPENDENT SCATTERING LENGTHS/VOLUMES/HYPERVOLUMES FOR CHANNELS WITH LOW KINETIC ENERGY
+  CHAN   L POW     WVEC*BOHR             RE(A)/BOHR            IM(A)/BOHR      
+    1    0   1 1.6291964814166E-004   6.0033523261808E+001   8.4849052013485E-014
+
+  S-MATRIX EIGENPHASE SUM, EPSUM/PI =  9.99689
+
+  EFFECTIVE RANGE AT EFV SET   6 FOR CHANNEL   1:
+  FROM EXPANSION OF 1/A AT ENERGIES 1 AND   2 IS   72.852     BOHR WITH 1/A(K=0) =   0.1665832670E-01 BOHR^-1
+  FROM EXPANSION OF  A  AT ENERGIES 1 AND   2 IS   72.858     BOHR WITH   A(K=0) =    60.03003882     BOHR
+
+  ----------------------------------------------------------------------------------------------------------------------
+
+  EFV SET     7:  MAGNETIC Z FIELD =   348.6000000     GAUSS
+  REFERENCE ENERGY IS                          -9.5307853144E-02 CM-1    = -0.1371267354     K       
+
+  THRESHOLDS CALCULATED FROM ASYMPTOTIC HAMILTONIAN:
+
+  THRESHOLD       L           ENERGY/CM-1                ENERGY/K
+          1       0        -9.530785314447E-02        -0.137126735366    
+          2       0        -1.479996158076E-02        -2.129384251298E-02
+          3       0        -2.697683018208E-03        -3.881363949913E-03
+          4       0         6.479310003662E-02         9.322281416605E-02
+          5       0         6.570792998295E-02         9.453905033983E-02
+
+  K-DEPENDENT SCATTERING LENGTHS/VOLUMES/HYPERVOLUMES FOR CHANNELS WITH LOW KINETIC ENERGY
+  CHAN   L POW     WVEC*BOHR             RE(A)/BOHR            IM(A)/BOHR      
+    1    0   1 1.1520158796691E-004   6.0032909513204E+001   4.4756839272108E-013
+
+  S-MATRIX EIGENPHASE SUM, EPSUM/PI =  9.99780
+
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+  K-DEPENDENT SCATTERING LENGTHS/VOLUMES/HYPERVOLUMES FOR CHANNELS WITH LOW KINETIC ENERGY
+  CHAN   L POW     WVEC*BOHR             RE(A)/BOHR            IM(A)/BOHR      
+    1    0   1 1.6291964813101E-004   6.0034651704928E+001  -6.4635013155673E-014
+
+  S-MATRIX EIGENPHASE SUM, EPSUM/PI =  9.99689
+
+  EFFECTIVE RANGE AT EFV SET   7 FOR CHANNEL   1:
+  FROM EXPANSION OF 1/A AT ENERGIES 1 AND   2 IS   72.848     BOHR WITH 1/A(K=0) =   0.1665801354E-01 BOHR^-1
+  FROM EXPANSION OF  A  AT ENERGIES 1 AND   2 IS   72.854     BOHR WITH   A(K=0) =    60.03116732     BOHR
+
+  ----------------------------------------------------------------------------------------------------------------------
+
+  EFV SET     8:  MAGNETIC Z FIELD =   348.7000000     GAUSS
+  REFERENCE ENERGY IS                          -9.5315079941E-02 CM-1    = -0.1371371331     K       
+
+  THRESHOLDS CALCULATED FROM ASYMPTOTIC HAMILTONIAN:
+
+  THRESHOLD       L           ENERGY/CM-1                ENERGY/K
+          1       0        -9.531507994060E-02        -0.137137133113    
+          2       0        -1.479996909364E-02        -2.129385332234E-02
+          3       0        -2.695273500924E-03        -3.877897192159E-03
+          4       0         6.480002725878E-02         9.323278089311E-02
+          5       0         6.571514175332E-02         9.454942646828E-02
+
+  K-DEPENDENT SCATTERING LENGTHS/VOLUMES/HYPERVOLUMES FOR CHANNELS WITH LOW KINETIC ENERGY
+  CHAN   L POW     WVEC*BOHR             RE(A)/BOHR            IM(A)/BOHR      
+    1    0   1 1.1520158795185E-004   6.0034036309853E+001  -3.9057091970777E-014
+
+  S-MATRIX EIGENPHASE SUM, EPSUM/PI =  9.99780
+
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+  K-DEPENDENT SCATTERING LENGTHS/VOLUMES/HYPERVOLUMES FOR CHANNELS WITH LOW KINETIC ENERGY
+  CHAN   L POW     WVEC*BOHR             RE(A)/BOHR            IM(A)/BOHR      
+    1    0   1 1.6291964813101E-004   6.0035779116050E+001  -2.5304981984499E-013
+
+  S-MATRIX EIGENPHASE SUM, EPSUM/PI =  9.99689
+
+  EFFECTIVE RANGE AT EFV SET   8 FOR CHANNEL   1:
+  FROM EXPANSION OF 1/A AT ENERGIES 1 AND   2 IS   72.871     BOHR WITH 1/A(K=0) =   0.1665770105E-01 BOHR^-1
+  FROM EXPANSION OF  A  AT ENERGIES 1 AND   2 IS   72.877     BOHR WITH   A(K=0) =    60.03229350     BOHR
+
+  ----------------------------------------------------------------------------------------------------------------------
+
+  EFV SET     9:  MAGNETIC Z FIELD =   348.8000000     GAUSS
+  REFERENCE ENERGY IS                          -9.5322307176E-02 CM-1    = -0.1371475315     K       
+
+  THRESHOLDS CALCULATED FROM ASYMPTOTIC HAMILTONIAN:
+
+  THRESHOLD       L           ENERGY/CM-1                ENERGY/K
+          1       0        -9.532230717559E-02        -0.137147531492    
+          2       0        -1.479997660653E-02        -2.129386413171E-02
+          3       0        -2.692864480278E-03        -3.874431148956E-03
+          4       0         6.480695497757E-02         9.324274833473E-02
+          5       0         6.572235396253E-02         9.455980322814E-02
+
+  K-DEPENDENT SCATTERING LENGTHS/VOLUMES/HYPERVOLUMES FOR CHANNELS WITH LOW KINETIC ENERGY
+  CHAN   L POW     WVEC*BOHR             RE(A)/BOHR            IM(A)/BOHR      
+    1    0   1 1.1520158795185E-004   6.0035161817931E+001   4.3680416411896E-013
+
+  S-MATRIX EIGENPHASE SUM, EPSUM/PI =  9.99780
+
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+  K-DEPENDENT SCATTERING LENGTHS/VOLUMES/HYPERVOLUMES FOR CHANNELS WITH LOW KINETIC ENERGY
+  CHAN   L POW     WVEC*BOHR             RE(A)/BOHR            IM(A)/BOHR      
+    1    0   1 1.6291964813101E-004   6.0036905842781E+001   5.8196467443641E-013
+
+  S-MATRIX EIGENPHASE SUM, EPSUM/PI =  9.99689
+
+  EFFECTIVE RANGE AT EFV SET   9 FOR CHANNEL   1:
+  FROM EXPANSION OF 1/A AT ENERGIES 1 AND   2 IS   72.919     BOHR WITH 1/A(K=0) =   0.1665738909E-01 BOHR^-1
+  FROM EXPANSION OF  A  AT ENERGIES 1 AND   2 IS   72.926     BOHR WITH   A(K=0) =    60.03341779     BOHR
+
+  ----------------------------------------------------------------------------------------------------------------------
+
+  EFV SET    10:  MAGNETIC Z FIELD =   348.9000000     GAUSS
+  REFERENCE ENERGY IS                          -9.5329534849E-02 CM-1    = -0.1371579305     K       
+
+  THRESHOLDS CALCULATED FROM ASYMPTOTIC HAMILTONIAN:
+
+  THRESHOLD       L           ENERGY/CM-1                ENERGY/K
+          1       0        -9.532953484931E-02        -0.137157930501    
+          2       0        -1.479998411941E-02        -2.129387494107E-02
+          3       0        -2.690455956170E-03        -3.870965820160E-03
+          4       0         6.481388319290E-02         9.325271649075E-02
+          5       0         6.572956661049E-02         9.457018061924E-02
+
+  K-DEPENDENT SCATTERING LENGTHS/VOLUMES/HYPERVOLUMES FOR CHANNELS WITH LOW KINETIC ENERGY
+  CHAN   L POW     WVEC*BOHR             RE(A)/BOHR            IM(A)/BOHR      
+    1    0   1 1.1520158795185E-004   6.0036291725988E+001  -2.7951701964628E-013
+
+  S-MATRIX EIGENPHASE SUM, EPSUM/PI =  9.99780
+
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+  K-DEPENDENT SCATTERING LENGTHS/VOLUMES/HYPERVOLUMES FOR CHANNELS WITH LOW KINETIC ENERGY
+  CHAN   L POW     WVEC*BOHR             RE(A)/BOHR            IM(A)/BOHR      
+    1    0   1 1.6291964813101E-004   6.0038034880163E+001  -1.8658472909675E-013
+
+  S-MATRIX EIGENPHASE SUM, EPSUM/PI =  9.99689
+
+  EFFECTIVE RANGE AT EFV SET  10 FOR CHANNEL   1:
+  FROM EXPANSION OF 1/A AT ENERGIES 1 AND   2 IS   72.880     BOHR WITH 1/A(K=0) =   0.1665707534E-01 BOHR^-1
+  FROM EXPANSION OF  A  AT ENERGIES 1 AND   2 IS   72.886     BOHR WITH   A(K=0) =    60.03454857     BOHR
+
+  ----------------------------------------------------------------------------------------------------------------------
+
+  EFV SET    11:  MAGNETIC Z FIELD =   349.0000000     GAUSS
+  REFERENCE ENERGY IS                          -9.5336762962E-02 CM-1    = -0.1371683301     K       
+
+  THRESHOLDS CALCULATED FROM ASYMPTOTIC HAMILTONIAN:
+
+  THRESHOLD       L           ENERGY/CM-1                ENERGY/K
+          1       0        -9.533676296164E-02        -0.137168330142    
+          2       0        -1.479999163229E-02        -2.129388575043E-02
+          3       0        -2.688047928499E-03        -3.867501205627E-03
+          4       0         6.482081190467E-02         9.326268536103E-02
+          5       0         6.573677969706E-02         9.458055864141E-02
+
+  K-DEPENDENT SCATTERING LENGTHS/VOLUMES/HYPERVOLUMES FOR CHANNELS WITH LOW KINETIC ENERGY
+  CHAN   L POW     WVEC*BOHR             RE(A)/BOHR            IM(A)/BOHR      
+    1    0   1 1.1520158796691E-004   6.0037419884429E+001  -3.3116178880532E-014
+
+  S-MATRIX EIGENPHASE SUM, EPSUM/PI =  9.99780
+
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+  K-DEPENDENT SCATTERING LENGTHS/VOLUMES/HYPERVOLUMES FOR CHANNELS WITH LOW KINETIC ENERGY
+  CHAN   L POW     WVEC*BOHR             RE(A)/BOHR            IM(A)/BOHR      
+    1    0   1 1.6291964813101E-004   6.0039162764270E+001   1.0814094865171E-015
+
+  S-MATRIX EIGENPHASE SUM, EPSUM/PI =  9.99689
+
+  EFFECTIVE RANGE AT EFV SET  11 FOR CHANNEL   1:
+  FROM EXPANSION OF 1/A AT ENERGIES 1 AND   2 IS   72.866     BOHR WITH 1/A(K=0) =   0.1665676225E-01 BOHR^-1
+  FROM EXPANSION OF  A  AT ENERGIES 1 AND   2 IS   72.872     BOHR WITH   A(K=0) =    60.03567700     BOHR
+
+  ----------------------------------------------------------------------------------------------------------------------
+
+  EFV SET    12:  MAGNETIC Z FIELD =   349.1000000     GAUSS
+  REFERENCE ENERGY IS                          -9.5343991512E-02 CM-1    = -0.1371787304     K       
+
+  THRESHOLDS CALCULATED FROM ASYMPTOTIC HAMILTONIAN:
+
+  THRESHOLD       L           ENERGY/CM-1                ENERGY/K
+          1       0        -9.534399151248E-02        -0.137178730414    
+          2       0        -1.479999914518E-02        -2.129389655980E-02
+          3       0        -2.685640397167E-03        -3.864037305213E-03
+          4       0         6.482774111278E-02         9.327265494544E-02
+          5       0         6.574399322212E-02         9.459093729449E-02
+
+  K-DEPENDENT SCATTERING LENGTHS/VOLUMES/HYPERVOLUMES FOR CHANNELS WITH LOW KINETIC ENERGY
+  CHAN   L POW     WVEC*BOHR             RE(A)/BOHR            IM(A)/BOHR      
+    1    0   1 1.1520158793679E-004   6.0038543785031E+001   1.1669482646228E-012
+
+  S-MATRIX EIGENPHASE SUM, EPSUM/PI =  9.99780
+
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+  K-DEPENDENT SCATTERING LENGTHS/VOLUMES/HYPERVOLUMES FOR CHANNELS WITH LOW KINETIC ENERGY
+  CHAN   L POW     WVEC*BOHR             RE(A)/BOHR            IM(A)/BOHR      
+    1    0   1 1.6291964812036E-004   6.0040288074628E+001  -4.0378166522283E-013
+
+  S-MATRIX EIGENPHASE SUM, EPSUM/PI =  9.99689
+
+  EFFECTIVE RANGE AT EFV SET  12 FOR CHANNEL   1:
+  FROM EXPANSION OF 1/A AT ENERGIES 1 AND   2 IS   72.922     BOHR WITH 1/A(K=0) =   0.1665645082E-01 BOHR^-1
+  FROM EXPANSION OF  A  AT ENERGIES 1 AND   2 IS   72.928     BOHR WITH   A(K=0) =    60.03679950     BOHR
+
+  ----------------------------------------------------------------------------------------------------------------------
+
+  EFV SET    13:  MAGNETIC Z FIELD =   349.2000000     GAUSS
+  REFERENCE ENERGY IS                          -9.5351220502E-02 CM-1    = -0.1371891313     K       
+
+  THRESHOLDS CALCULATED FROM ASYMPTOTIC HAMILTONIAN:
+
+  THRESHOLD       L           ENERGY/CM-1                ENERGY/K
+          1       0        -9.535122050170E-02        -0.137189131317    
+          2       0        -1.480000665806E-02        -2.129390736916E-02
+          3       0        -2.683233362073E-03        -3.860574118776E-03
+          4       0         6.483467081712E-02         9.328262524382E-02
+          5       0         6.575120718557E-02         9.460131657830E-02
+
+  K-DEPENDENT SCATTERING LENGTHS/VOLUMES/HYPERVOLUMES FOR CHANNELS WITH LOW KINETIC ENERGY
+  CHAN   L POW     WVEC*BOHR             RE(A)/BOHR            IM(A)/BOHR      
+    1    0   1 1.1520158796691E-004   6.0039674234129E+001  -5.1932991711584E-013
+
+  S-MATRIX EIGENPHASE SUM, EPSUM/PI =  9.99780
+
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+  K-DEPENDENT SCATTERING LENGTHS/VOLUMES/HYPERVOLUMES FOR CHANNELS WITH LOW KINETIC ENERGY
+  CHAN   L POW     WVEC*BOHR             RE(A)/BOHR            IM(A)/BOHR      
+    1    0   1 1.6291964814166E-004   6.0041416936503E+001   5.0826245862980E-013
+
+  S-MATRIX EIGENPHASE SUM, EPSUM/PI =  9.99689
+
+  EFFECTIVE RANGE AT EFV SET  13 FOR CHANNEL   1:
+  FROM EXPANSION OF 1/A AT ENERGIES 1 AND   2 IS   72.853     BOHR WITH 1/A(K=0) =   0.1665613676E-01 BOHR^-1
+  FROM EXPANSION OF  A  AT ENERGIES 1 AND   2 IS   72.859     BOHR WITH   A(K=0) =    60.03793153     BOHR
+
+  ----------------------------------------------------------------------------------------------------------------------
+
+  EFV SET    14:  MAGNETIC Z FIELD =   349.3000000     GAUSS
+  REFERENCE ENERGY IS                          -9.5358449929E-02 CM-1    = -0.1371995328     K       
+
+  THRESHOLDS CALCULATED FROM ASYMPTOTIC HAMILTONIAN:
+
+  THRESHOLD       L           ENERGY/CM-1                ENERGY/K
+          1       0        -9.535844992918E-02        -0.137199532850    
+          2       0        -1.480001417095E-02        -2.129391817853E-02
+          3       0        -2.680826823118E-03        -3.857111646172E-03
+          4       0         6.484160101761E-02         9.329259625603E-02
+          5       0         6.575842158729E-02         9.461169649267E-02
+
+  K-DEPENDENT SCATTERING LENGTHS/VOLUMES/HYPERVOLUMES FOR CHANNELS WITH LOW KINETIC ENERGY
+  CHAN   L POW     WVEC*BOHR             RE(A)/BOHR            IM(A)/BOHR      
+    1    0   1 1.1520158793679E-004   6.0040796726441E+001   1.0775404637141E-012
+
+  S-MATRIX EIGENPHASE SUM, EPSUM/PI =  9.99780
+
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+  K-DEPENDENT SCATTERING LENGTHS/VOLUMES/HYPERVOLUMES FOR CHANNELS WITH LOW KINETIC ENERGY
+  CHAN   L POW     WVEC*BOHR             RE(A)/BOHR            IM(A)/BOHR      
+    1    0   1 1.6291964812036E-004   6.0042541439851E+001  -4.8081129480593E-013
+
+  S-MATRIX EIGENPHASE SUM, EPSUM/PI =  9.99689
+
+  EFFECTIVE RANGE AT EFV SET  14 FOR CHANNEL   1:
+  FROM EXPANSION OF 1/A AT ENERGIES 1 AND   2 IS   72.934     BOHR WITH 1/A(K=0) =   0.1665582591E-01 BOHR^-1
+  FROM EXPANSION OF  A  AT ENERGIES 1 AND   2 IS   72.941     BOHR WITH   A(K=0) =    60.03905201     BOHR
+
+  ----------------------------------------------------------------------------------------------------------------------
+
+  EFV SET    15:  MAGNETIC Z FIELD =   349.4000000     GAUSS
+  REFERENCE ENERGY IS                          -9.5365679795E-02 CM-1    = -0.1372099350     K       
+
+  THRESHOLDS CALCULATED FROM ASYMPTOTIC HAMILTONIAN:
+
+  THRESHOLD       L           ENERGY/CM-1                ENERGY/K
+          1       0        -9.536567979481E-02        -0.137209935013    
+          2       0        -1.480002168383E-02        -2.129392898789E-02
+          3       0        -2.678420780201E-03        -3.853649887257E-03
+          4       0         6.484853171413E-02         9.330256798193E-02
+          5       0         6.576563642715E-02         9.462207703743E-02
+
+  K-DEPENDENT SCATTERING LENGTHS/VOLUMES/HYPERVOLUMES FOR CHANNELS WITH LOW KINETIC ENERGY
+  CHAN   L POW     WVEC*BOHR             RE(A)/BOHR            IM(A)/BOHR      
+    1    0   1 1.1520158795185E-004   6.0041923121642E+001  -6.8467552792145E-014
+
+  S-MATRIX EIGENPHASE SUM, EPSUM/PI =  9.99780
+
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+  K-DEPENDENT SCATTERING LENGTHS/VOLUMES/HYPERVOLUMES FOR CHANNELS WITH LOW KINETIC ENERGY
+  CHAN   L POW     WVEC*BOHR             RE(A)/BOHR            IM(A)/BOHR      
+    1    0   1 1.6291964812036E-004   6.0043667593461E+001  -3.7799420823497E-013
+
+  S-MATRIX EIGENPHASE SUM, EPSUM/PI =  9.99689
+
+  EFFECTIVE RANGE AT EFV SET  15 FOR CHANNEL   1:
+  FROM EXPANSION OF 1/A AT ENERGIES 1 AND   2 IS   72.921     BOHR WITH 1/A(K=0) =   0.1665551337E-01 BOHR^-1
+  FROM EXPANSION OF  A  AT ENERGIES 1 AND   2 IS   72.928     BOHR WITH   A(K=0) =    60.04017865     BOHR
+
+  ----------------------------------------------------------------------------------------------------------------------
+
+  EFV SET    16:  MAGNETIC Z FIELD =   349.5000000     GAUSS
+  REFERENCE ENERGY IS                          -9.5372910098E-02 CM-1    = -0.1372203378     K       
+
+  THRESHOLDS CALCULATED FROM ASYMPTOTIC HAMILTONIAN:
+
+  THRESHOLD       L           ENERGY/CM-1                ENERGY/K
+          1       0        -9.537291009846E-02        -0.137220337807    
+          2       0        -1.480002919671E-02        -2.129393979725E-02
+          3       0        -2.676015233224E-03        -3.850188841888E-03
+          4       0         6.485546290659E-02         9.331254042138E-02
+          5       0         6.577285170503E-02         9.463245821242E-02
+
+  K-DEPENDENT SCATTERING LENGTHS/VOLUMES/HYPERVOLUMES FOR CHANNELS WITH LOW KINETIC ENERGY
+  CHAN   L POW     WVEC*BOHR             RE(A)/BOHR            IM(A)/BOHR      
+    1    0   1 1.1520158795185E-004   6.0043052707093E+001   5.6650429634119E-013
+
+  S-MATRIX EIGENPHASE SUM, EPSUM/PI =  9.99780
+
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+  K-DEPENDENT SCATTERING LENGTHS/VOLUMES/HYPERVOLUMES FOR CHANNELS WITH LOW KINETIC ENERGY
+  CHAN   L POW     WVEC*BOHR             RE(A)/BOHR            IM(A)/BOHR      
+    1    0   1 1.6291964813101E-004   6.0044795734460E+001  -3.7450042371537E-013
+
+  S-MATRIX EIGENPHASE SUM, EPSUM/PI =  9.99689
+
+  EFFECTIVE RANGE AT EFV SET  16 FOR CHANNEL   1:
+  FROM EXPANSION OF 1/A AT ENERGIES 1 AND   2 IS   72.858     BOHR WITH 1/A(K=0) =   0.1665519962E-01 BOHR^-1
+  FROM EXPANSION OF  A  AT ENERGIES 1 AND   2 IS   72.865     BOHR WITH   A(K=0) =    60.04130968     BOHR
+
+  ----------------------------------------------------------------------------------------------------------------------
+
+  EFV SET    17:  MAGNETIC Z FIELD =   349.6000000     GAUSS
+  REFERENCE ENERGY IS                          -9.5380140840E-02 CM-1    = -0.1372307412     K       
+
+  THRESHOLDS CALCULATED FROM ASYMPTOTIC HAMILTONIAN:
+
+  THRESHOLD       L           ENERGY/CM-1                ENERGY/K
+          1       0        -9.538014084002E-02        -0.137230741231    
+          2       0        -1.480003670960E-02        -2.129395060662E-02
+          3       0        -2.673610182087E-03        -3.846728509922E-03
+          4       0         6.486239459489E-02         9.332251357423E-02
+          5       0         6.578006742083E-02         9.464284001746E-02
+
+  K-DEPENDENT SCATTERING LENGTHS/VOLUMES/HYPERVOLUMES FOR CHANNELS WITH LOW KINETIC ENERGY
+  CHAN   L POW     WVEC*BOHR             RE(A)/BOHR            IM(A)/BOHR      
+    1    0   1 1.1520158795185E-004   6.0044177973290E+001  -3.4886688626307E-013
+
+  S-MATRIX EIGENPHASE SUM, EPSUM/PI =  9.99780
+
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+  K-DEPENDENT SCATTERING LENGTHS/VOLUMES/HYPERVOLUMES FOR CHANNELS WITH LOW KINETIC ENERGY
+  CHAN   L POW     WVEC*BOHR             RE(A)/BOHR            IM(A)/BOHR      
+    1    0   1 1.6291964812036E-004   6.0045921380987E+001  -1.9714926793945E-014
+
+  S-MATRIX EIGENPHASE SUM, EPSUM/PI =  9.99689
+
+  EFFECTIVE RANGE AT EFV SET  17 FOR CHANNEL   1:
+  FROM EXPANSION OF 1/A AT ENERGIES 1 AND   2 IS   72.871     BOHR WITH 1/A(K=0) =   0.1665488759E-01 BOHR^-1
+  FROM EXPANSION OF  A  AT ENERGIES 1 AND   2 IS   72.878     BOHR WITH   A(K=0) =    60.04243457     BOHR
+
+  ----------------------------------------------------------------------------------------------------------------------
+
+  EFV SET    18:  MAGNETIC Z FIELD =   349.7000000     GAUSS
+  REFERENCE ENERGY IS                          -9.5387372019E-02 CM-1    = -0.1372411453     K       
+
+  THRESHOLDS CALCULATED FROM ASYMPTOTIC HAMILTONIAN:
+
+  THRESHOLD       L           ENERGY/CM-1                ENERGY/K
+          1       0        -9.538737201938E-02        -0.137241145284    
+          2       0        -1.480004422248E-02        -2.129396141598E-02
+          3       0        -2.671205626689E-03        -3.843268891215E-03
+          4       0         6.486932677893E-02         9.333248744034E-02
+          5       0         6.578728357441E-02         9.465322245239E-02
+
+  K-DEPENDENT SCATTERING LENGTHS/VOLUMES/HYPERVOLUMES FOR CHANNELS WITH LOW KINETIC ENERGY
+  CHAN   L POW     WVEC*BOHR             RE(A)/BOHR            IM(A)/BOHR      
+    1    0   1 1.1520158793679E-004   6.0045303053379E+001   2.4322451102451E-013
+
+  S-MATRIX EIGENPHASE SUM, EPSUM/PI =  9.99780
+
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+  K-DEPENDENT SCATTERING LENGTHS/VOLUMES/HYPERVOLUMES FOR CHANNELS WITH LOW KINETIC ENERGY
+  CHAN   L POW     WVEC*BOHR             RE(A)/BOHR            IM(A)/BOHR      
+    1    0   1 1.6291964812036E-004   6.0047046781281E+001  -5.1782877338528E-013
+
+  S-MATRIX EIGENPHASE SUM, EPSUM/PI =  9.99689
+
+  EFFECTIVE RANGE AT EFV SET  18 FOR CHANNEL   1:
+  FROM EXPANSION OF 1/A AT ENERGIES 1 AND   2 IS   72.882     BOHR WITH 1/A(K=0) =   0.1665457560E-01 BOHR^-1
+  FROM EXPANSION OF  A  AT ENERGIES 1 AND   2 IS   72.888     BOHR WITH   A(K=0) =    60.04355933     BOHR
+
+  ----------------------------------------------------------------------------------------------------------------------
+
+  EFV SET    19:  MAGNETIC Z FIELD =   349.8000000     GAUSS
+  REFERENCE ENERGY IS                          -9.5394603636E-02 CM-1    = -0.1372515500     K       
+
+  THRESHOLDS CALCULATED FROM ASYMPTOTIC HAMILTONIAN:
+
+  THRESHOLD       L           ENERGY/CM-1                ENERGY/K
+          1       0        -9.539460363641E-02        -0.137251549968    
+          2       0        -1.480005173537E-02        -2.129397222535E-02
+          3       0        -2.668801566931E-03        -3.839809985623E-03
+          4       0         6.487625945862E-02         9.334246201957E-02
+          5       0         6.579450016567E-02         9.466360551703E-02
+
+  K-DEPENDENT SCATTERING LENGTHS/VOLUMES/HYPERVOLUMES FOR CHANNELS WITH LOW KINETIC ENERGY
+  CHAN   L POW     WVEC*BOHR             RE(A)/BOHR            IM(A)/BOHR      
+    1    0   1 1.1520158793679E-004   6.0046426598088E+001  -2.3504840291510E-013
+
+  S-MATRIX EIGENPHASE SUM, EPSUM/PI =  9.99780
+
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+  K-DEPENDENT SCATTERING LENGTHS/VOLUMES/HYPERVOLUMES FOR CHANNELS WITH LOW KINETIC ENERGY
+  CHAN   L POW     WVEC*BOHR             RE(A)/BOHR            IM(A)/BOHR      
+    1    0   1 1.6291964812036E-004   6.0048171266555E+001  -3.0437517780188E-013
+
+  S-MATRIX EIGENPHASE SUM, EPSUM/PI =  9.99689
+
+  EFFECTIVE RANGE AT EFV SET  19 FOR CHANNEL   1:
+  FROM EXPANSION OF 1/A AT ENERGIES 1 AND   2 IS   72.919     BOHR WITH 1/A(K=0) =   0.1665426423E-01 BOHR^-1
+  FROM EXPANSION OF  A  AT ENERGIES 1 AND   2 IS   72.925     BOHR WITH   A(K=0) =    60.04468193     BOHR
+
+  ----------------------------------------------------------------------------------------------------------------------
+
+  EFV SET    20:  MAGNETIC Z FIELD =   349.9000000     GAUSS
+  REFERENCE ENERGY IS                          -9.5401835691E-02 CM-1    = -0.1372619553     K       
+
+  THRESHOLDS CALCULATED FROM ASYMPTOTIC HAMILTONIAN:
+
+  THRESHOLD       L           ENERGY/CM-1                ENERGY/K
+          1       0        -9.540183569099E-02        -0.137261955281    
+          2       0        -1.480005924825E-02        -2.129398303471E-02
+          3       0        -2.666398002714E-03        -3.836351793003E-03
+          4       0         6.488319263384E-02         9.335243731177E-02
+          5       0         6.580171719449E-02         9.467398921122E-02
+
+  K-DEPENDENT SCATTERING LENGTHS/VOLUMES/HYPERVOLUMES FOR CHANNELS WITH LOW KINETIC ENERGY
+  CHAN   L POW     WVEC*BOHR             RE(A)/BOHR            IM(A)/BOHR      
+    1    0   1 1.1520158795185E-004   6.0047552827358E+001   3.5621950146841E-013
+
+  S-MATRIX EIGENPHASE SUM, EPSUM/PI =  9.99780
+
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+  K-DEPENDENT SCATTERING LENGTHS/VOLUMES/HYPERVOLUMES FOR CHANNELS WITH LOW KINETIC ENERGY
+  CHAN   L POW     WVEC*BOHR             RE(A)/BOHR            IM(A)/BOHR      
+    1    0   1 1.6291964812036E-004   6.0049296916435E+001  -1.5638844882961E-013
+
+  S-MATRIX EIGENPHASE SUM, EPSUM/PI =  9.99689
+
+  EFFECTIVE RANGE AT EFV SET  20 FOR CHANNEL   1:
+  FROM EXPANSION OF 1/A AT ENERGIES 1 AND   2 IS   72.892     BOHR WITH 1/A(K=0) =   0.1665395170E-01 BOHR^-1
+  FROM EXPANSION OF  A  AT ENERGIES 1 AND   2 IS   72.898     BOHR WITH   A(K=0) =    60.04580874     BOHR
+
+  ----------------------------------------------------------------------------------------------------------------------
+
+  EFV SET    21:  MAGNETIC Z FIELD =   350.0000000     GAUSS
+  REFERENCE ENERGY IS                          -9.5409068183E-02 CM-1    = -0.1372723612     K       
+
+  THRESHOLDS CALCULATED FROM ASYMPTOTIC HAMILTONIAN:
+
+  THRESHOLD       L           ENERGY/CM-1                ENERGY/K
+          1       0        -9.540906818302E-02        -0.137272361223    
+          2       0        -1.480006676113E-02        -2.129399384407E-02
+          3       0        -2.663994933938E-03        -3.832894313213E-03
+          4       0         6.489012630450E-02         9.336241331679E-02
+          5       0         6.580893466075E-02         9.468437353478E-02
+
+  K-DEPENDENT SCATTERING LENGTHS/VOLUMES/HYPERVOLUMES FOR CHANNELS WITH LOW KINETIC ENERGY
+  CHAN   L POW     WVEC*BOHR             RE(A)/BOHR            IM(A)/BOHR      
+    1    0   1 1.1520158795185E-004   6.0048676999670E+001  -8.2114006613260E-013
+
+  S-MATRIX EIGENPHASE SUM, EPSUM/PI =  9.99780
+
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+  K-DEPENDENT SCATTERING LENGTHS/VOLUMES/HYPERVOLUMES FOR CHANNELS WITH LOW KINETIC ENERGY
+  CHAN   L POW     WVEC*BOHR             RE(A)/BOHR            IM(A)/BOHR      
+    1    0   1 1.6291964812036E-004   6.0050421406170E+001   1.8957940153334E-013
+
+  S-MATRIX EIGENPHASE SUM, EPSUM/PI =  9.99689
+
+  EFFECTIVE RANGE AT EFV SET  21 FOR CHANNEL   1:
+  FROM EXPANSION OF 1/A AT ENERGIES 1 AND   2 IS   72.902     BOHR WITH 1/A(K=0) =   0.1665364000E-01 BOHR^-1
+  FROM EXPANSION OF  A  AT ENERGIES 1 AND   2 IS   72.909     BOHR WITH   A(K=0) =    60.04693259     BOHR
+
+  ----------------------------------------------------------------------------------------------------------------------
+
+  EFV SET    22:  MAGNETIC Z FIELD =   350.1000000     GAUSS
+  REFERENCE ENERGY IS                          -9.5416301112E-02 CM-1    = -0.1372827678     K       
+
+  THRESHOLDS CALCULATED FROM ASYMPTOTIC HAMILTONIAN:
+
+  THRESHOLD       L           ENERGY/CM-1                ENERGY/K
+          1       0        -9.541630111236E-02        -0.137282767794    
+          2       0        -1.480007427402E-02        -2.129400465344E-02
+          3       0        -2.661592360503E-03        -3.829437546107E-03
+          4       0         6.489706047050E-02         9.337239003451E-02
+          5       0         6.581615256433E-02         9.469475848756E-02
+
+  K-DEPENDENT SCATTERING LENGTHS/VOLUMES/HYPERVOLUMES FOR CHANNELS WITH LOW KINETIC ENERGY
+  CHAN   L POW     WVEC*BOHR             RE(A)/BOHR            IM(A)/BOHR      
+    1    0   1 1.1520158795185E-004   6.0049802225446E+001  -1.3695275186078E-012
+
+  S-MATRIX EIGENPHASE SUM, EPSUM/PI =  9.99780
+
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+  K-DEPENDENT SCATTERING LENGTHS/VOLUMES/HYPERVOLUMES FOR CHANNELS WITH LOW KINETIC ENERGY
+  CHAN   L POW     WVEC*BOHR             RE(A)/BOHR            IM(A)/BOHR      
+    1    0   1 1.6291964813101E-004   6.0051546233785E+001  -1.8908028945025E-013
+
+  S-MATRIX EIGENPHASE SUM, EPSUM/PI =  9.99689
+
+  EFFECTIVE RANGE AT EFV SET  22 FOR CHANNEL   1:
+  FROM EXPANSION OF 1/A AT ENERGIES 1 AND   2 IS   72.883     BOHR WITH 1/A(K=0) =   0.1665332782E-01 BOHR^-1
+  FROM EXPANSION OF  A  AT ENERGIES 1 AND   2 IS   72.889     BOHR WITH   A(K=0) =    60.04805822     BOHR
+
+  ----------------------------------------------------------------------------------------------------------------------
+
+  EFV SET    23:  MAGNETIC Z FIELD =   350.2000000     GAUSS
+  REFERENCE ENERGY IS                          -9.5423534479E-02 CM-1    = -0.1372931750     K       
+
+  THRESHOLDS CALCULATED FROM ASYMPTOTIC HAMILTONIAN:
+
+  THRESHOLD       L           ENERGY/CM-1                ENERGY/K
+          1       0        -9.542353447891E-02        -0.137293174995    
+          2       0        -1.480008178690E-02        -2.129401546280E-02
+          3       0        -2.659190282309E-03        -3.825981491544E-03
+          4       0         6.490399513175E-02         9.338236746476E-02
+          5       0         6.582337090511E-02         9.470514406937E-02
+
+  K-DEPENDENT SCATTERING LENGTHS/VOLUMES/HYPERVOLUMES FOR CHANNELS WITH LOW KINETIC ENERGY
+  CHAN   L POW     WVEC*BOHR             RE(A)/BOHR            IM(A)/BOHR      
+    1    0   1 1.1520158796691E-004   6.0050927159903E+001  -6.5550035070097E-013
+
+  S-MATRIX EIGENPHASE SUM, EPSUM/PI =  9.99780
+
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+  K-DEPENDENT SCATTERING LENGTHS/VOLUMES/HYPERVOLUMES FOR CHANNELS WITH LOW KINETIC ENERGY
+  CHAN   L POW     WVEC*BOHR             RE(A)/BOHR            IM(A)/BOHR      
+    1    0   1 1.6291964814166E-004   6.0052671042989E+001  -5.2656323455427E-013
+
+  S-MATRIX EIGENPHASE SUM, EPSUM/PI =  9.99689
+
+  EFFECTIVE RANGE AT EFV SET  23 FOR CHANNEL   1:
+  FROM EXPANSION OF 1/A AT ENERGIES 1 AND   2 IS   72.875     BOHR WITH 1/A(K=0) =   0.1665301581E-01 BOHR^-1
+  FROM EXPANSION OF  A  AT ENERGIES 1 AND   2 IS   72.881     BOHR WITH   A(K=0) =    60.04918328     BOHR
+
+  ----------------------------------------------------------------------------------------------------------------------
+
+  EFV SET    24:  MAGNETIC Z FIELD =   350.3000000     GAUSS
+  REFERENCE ENERGY IS                          -9.5430768283E-02 CM-1    = -0.1373035828     K       
+
+  THRESHOLDS CALCULATED FROM ASYMPTOTIC HAMILTONIAN:
+
+  THRESHOLD       L           ENERGY/CM-1                ENERGY/K
+          1       0        -9.543076828255E-02        -0.137303582824    
+          2       0        -1.480008929979E-02        -2.129402627216E-02
+          3       0        -2.656788699258E-03        -3.822526149379E-03
+          4       0         6.491093028814E-02         9.339234560741E-02
+          5       0         6.583058968297E-02         9.471553028005E-02
+
+  K-DEPENDENT SCATTERING LENGTHS/VOLUMES/HYPERVOLUMES FOR CHANNELS WITH LOW KINETIC ENERGY
+  CHAN   L POW     WVEC*BOHR             RE(A)/BOHR            IM(A)/BOHR      
+    1    0   1 1.1520158793679E-004   6.0052049535410E+001  -9.0354817747218E-013
+
+  S-MATRIX EIGENPHASE SUM, EPSUM/PI =  9.99780
+
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+  K-DEPENDENT SCATTERING LENGTHS/VOLUMES/HYPERVOLUMES FOR CHANNELS WITH LOW KINETIC ENERGY
+  CHAN   L POW     WVEC*BOHR             RE(A)/BOHR            IM(A)/BOHR      
+    1    0   1 1.6291964812036E-004   6.0053794140025E+001   6.9310029555761E-013
+
+  S-MATRIX EIGENPHASE SUM, EPSUM/PI =  9.99689
+
+  EFFECTIVE RANGE AT EFV SET  24 FOR CHANNEL   1:
+  FROM EXPANSION OF 1/A AT ENERGIES 1 AND   2 IS   72.902     BOHR WITH 1/A(K=0) =   0.1665270475E-01 BOHR^-1
+  FROM EXPANSION OF  A  AT ENERGIES 1 AND   2 IS   72.909     BOHR WITH   A(K=0) =    60.05030493     BOHR
+
+  ----------------------------------------------------------------------------------------------------------------------
+
+  EFV SET    25:  MAGNETIC Z FIELD =   350.4000000     GAUSS
+  REFERENCE ENERGY IS                          -9.5438002523E-02 CM-1    = -0.1373139913     K       
+
+  THRESHOLDS CALCULATED FROM ASYMPTOTIC HAMILTONIAN:
+
+  THRESHOLD       L           ENERGY/CM-1                ENERGY/K
+          1       0        -9.543800252315E-02        -0.137313991282    
+          2       0        -1.480009681267E-02        -2.129403708153E-02
+          3       0        -2.654387611248E-03        -3.819071519470E-03
+          4       0         6.491786593957E-02         9.340232446232E-02
+          5       0         6.583780889781E-02         9.472591711943E-02
+
+  K-DEPENDENT SCATTERING LENGTHS/VOLUMES/HYPERVOLUMES FOR CHANNELS WITH LOW KINETIC ENERGY
+  CHAN   L POW     WVEC*BOHR             RE(A)/BOHR            IM(A)/BOHR      
+    1    0   1 1.1520158796691E-004   6.0053175902296E+001   5.3691737268472E-013
+
+  S-MATRIX EIGENPHASE SUM, EPSUM/PI =  9.99780
+
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+  K-DEPENDENT SCATTERING LENGTHS/VOLUMES/HYPERVOLUMES FOR CHANNELS WITH LOW KINETIC ENERGY
+  CHAN   L POW     WVEC*BOHR             RE(A)/BOHR            IM(A)/BOHR      
+    1    0   1 1.6291964813101E-004   6.0054919389068E+001  -2.9913450103964E-013
+
+  S-MATRIX EIGENPHASE SUM, EPSUM/PI =  9.99689
+
+  EFFECTIVE RANGE AT EFV SET  25 FOR CHANNEL   1:
+  FROM EXPANSION OF 1/A AT ENERGIES 1 AND   2 IS   72.853     BOHR WITH 1/A(K=0) =   0.1665239209E-01 BOHR^-1
+  FROM EXPANSION OF  A  AT ENERGIES 1 AND   2 IS   72.859     BOHR WITH   A(K=0) =    60.05143242     BOHR
+
+  ----------------------------------------------------------------------------------------------------------------------
+
+  EFV SET    26:  MAGNETIC Z FIELD =   350.5000000     GAUSS
+  REFERENCE ENERGY IS                          -9.5445237201E-02 CM-1    = -0.1373244004     K       
+
+  THRESHOLDS CALCULATED FROM ASYMPTOTIC HAMILTONIAN:
+
+  THRESHOLD       L           ENERGY/CM-1                ENERGY/K
+          1       0        -9.544523720061E-02        -0.137324400369    
+          2       0        -1.480010432555E-02        -2.129404789089E-02
+          3       0        -2.651987018181E-03        -3.815617601672E-03
+          4       0         6.492480208594E-02         9.341230402934E-02
+          5       0         6.584502854950E-02         9.473630458734E-02
+
+  K-DEPENDENT SCATTERING LENGTHS/VOLUMES/HYPERVOLUMES FOR CHANNELS WITH LOW KINETIC ENERGY
+  CHAN   L POW     WVEC*BOHR             RE(A)/BOHR            IM(A)/BOHR      
+    1    0   1 1.1520158795185E-004   6.0054299809812E+001   1.0058377600908E-012
+
+  S-MATRIX EIGENPHASE SUM, EPSUM/PI =  9.99780
+
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+  K-DEPENDENT SCATTERING LENGTHS/VOLUMES/HYPERVOLUMES FOR CHANNELS WITH LOW KINETIC ENERGY
+  CHAN   L POW     WVEC*BOHR             RE(A)/BOHR            IM(A)/BOHR      
+    1    0   1 1.6291964813101E-004   6.0056043110042E+001  -2.8698944065260E-014
+
+  S-MATRIX EIGENPHASE SUM, EPSUM/PI =  9.99689
+
+  EFFECTIVE RANGE AT EFV SET  26 FOR CHANNEL   1:
+  FROM EXPANSION OF 1/A AT ENERGIES 1 AND   2 IS   72.842     BOHR WITH 1/A(K=0) =   0.1665208038E-01 BOHR^-1
+  FROM EXPANSION OF  A  AT ENERGIES 1 AND   2 IS   72.849     BOHR WITH   A(K=0) =    60.05255651     BOHR
+
+  ----------------------------------------------------------------------------------------------------------------------
+
+  EFV SET    27:  MAGNETIC Z FIELD =   350.6000000     GAUSS
+  REFERENCE ENERGY IS                          -9.5452472315E-02 CM-1    = -0.1373348101     K       
+
+  THRESHOLDS CALCULATED FROM ASYMPTOTIC HAMILTONIAN:
+
+  THRESHOLD       L           ENERGY/CM-1                ENERGY/K
+          1       0        -9.545247231480E-02        -0.137334810084    
+          2       0        -1.480011183844E-02        -2.129405870026E-02
+          3       0        -2.649586919956E-03        -3.812164395842E-03
+          4       0         6.493173872715E-02         9.342228430833E-02
+          5       0         6.585224863792E-02         9.474669268362E-02
+
+  K-DEPENDENT SCATTERING LENGTHS/VOLUMES/HYPERVOLUMES FOR CHANNELS WITH LOW KINETIC ENERGY
+  CHAN   L POW     WVEC*BOHR             RE(A)/BOHR            IM(A)/BOHR      
+    1    0   1 1.1520158796691E-004   6.0055423903918E+001  -4.0504086637894E-013
+
+  S-MATRIX EIGENPHASE SUM, EPSUM/PI =  9.99780
+
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+  K-DEPENDENT SCATTERING LENGTHS/VOLUMES/HYPERVOLUMES FOR CHANNELS WITH LOW KINETIC ENERGY
+  CHAN   L POW     WVEC*BOHR             RE(A)/BOHR            IM(A)/BOHR      
+    1    0   1 1.6291964813101E-004   6.0057166838077E+001  -3.2716796234397E-013
+
+  S-MATRIX EIGENPHASE SUM, EPSUM/PI =  9.99689
+
+  EFFECTIVE RANGE AT EFV SET  27 FOR CHANNEL   1:
+  FROM EXPANSION OF 1/A AT ENERGIES 1 AND   2 IS   72.824     BOHR WITH 1/A(K=0) =   0.1665176859E-01 BOHR^-1
+  FROM EXPANSION OF  A  AT ENERGIES 1 AND   2 IS   72.831     BOHR WITH   A(K=0) =    60.05368097     BOHR
+
+  ----------------------------------------------------------------------------------------------------------------------
+
+  EFV SET    28:  MAGNETIC Z FIELD =   350.7000000     GAUSS
+  REFERENCE ENERGY IS                          -9.5459707866E-02 CM-1    = -0.1373452204     K       
+
+  THRESHOLDS CALCULATED FROM ASYMPTOTIC HAMILTONIAN:
+
+  THRESHOLD       L           ENERGY/CM-1                ENERGY/K
+          1       0        -9.545970786560E-02        -0.137345220427    
+          2       0        -1.480011935132E-02        -2.129406950962E-02
+          3       0        -2.647187316475E-03        -3.808711901838E-03
+          4       0         6.493867586311E-02         9.343226529914E-02
+          5       0         6.585946916296E-02         9.475708140809E-02
+
+  K-DEPENDENT SCATTERING LENGTHS/VOLUMES/HYPERVOLUMES FOR CHANNELS WITH LOW KINETIC ENERGY
+  CHAN   L POW     WVEC*BOHR             RE(A)/BOHR            IM(A)/BOHR      
+    1    0   1 1.1520158798196E-004   6.0056548868098E+001   5.3332929639527E-013
+
+  S-MATRIX EIGENPHASE SUM, EPSUM/PI =  9.99780
+
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+  K-DEPENDENT SCATTERING LENGTHS/VOLUMES/HYPERVOLUMES FOR CHANNELS WITH LOW KINETIC ENERGY
+  CHAN   L POW     WVEC*BOHR             RE(A)/BOHR            IM(A)/BOHR      
+    1    0   1 1.6291964814166E-004   6.0058290895492E+001  -5.2831012680161E-013
+
+  S-MATRIX EIGENPHASE SUM, EPSUM/PI =  9.99689
+
+  EFFECTIVE RANGE AT EFV SET  28 FOR CHANNEL   1:
+  FROM EXPANSION OF 1/A AT ENERGIES 1 AND   2 IS   72.784     BOHR WITH 1/A(K=0) =   0.1665145641E-01 BOHR^-1
+  FROM EXPANSION OF  A  AT ENERGIES 1 AND   2 IS   72.790     BOHR WITH   A(K=0) =    60.05480684     BOHR
+
+  ----------------------------------------------------------------------------------------------------------------------
+
+  EFV SET    29:  MAGNETIC Z FIELD =   350.8000000     GAUSS
+  REFERENCE ENERGY IS                          -9.5466943853E-02 CM-1    = -0.1373556314     K       
+
+  THRESHOLDS CALCULATED FROM ASYMPTOTIC HAMILTONIAN:
+
+  THRESHOLD       L           ENERGY/CM-1                ENERGY/K
+          1       0        -9.546694385291E-02        -0.137355631399    
+          2       0        -1.480012686421E-02        -2.129408031898E-02
+          3       0        -2.644788207637E-03        -3.805260119515E-03
+          4       0         6.494561349371E-02         9.344224700164E-02
+          5       0         6.586669012449E-02         9.476747076058E-02
+
+  K-DEPENDENT SCATTERING LENGTHS/VOLUMES/HYPERVOLUMES FOR CHANNELS WITH LOW KINETIC ENERGY
+  CHAN   L POW     WVEC*BOHR             RE(A)/BOHR            IM(A)/BOHR      
+    1    0   1 1.1520158798196E-004   6.0057671217638E+001  -6.9467508441911E-014
+
+  S-MATRIX EIGENPHASE SUM, EPSUM/PI =  9.99780
+
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+  K-DEPENDENT SCATTERING LENGTHS/VOLUMES/HYPERVOLUMES FOR CHANNELS WITH LOW KINETIC ENERGY
+  CHAN   L POW     WVEC*BOHR             RE(A)/BOHR            IM(A)/BOHR      
+    1    0   1 1.6291964815231E-004   6.0059413525505E+001  -6.3437144177701E-013
+
+  S-MATRIX EIGENPHASE SUM, EPSUM/PI =  9.99689
+
+  EFFECTIVE RANGE AT EFV SET  29 FOR CHANNEL   1:
+  FROM EXPANSION OF 1/A AT ENERGIES 1 AND   2 IS   72.793     BOHR WITH 1/A(K=0) =   0.1665114530E-01 BOHR^-1
+  FROM EXPANSION OF  A  AT ENERGIES 1 AND   2 IS   72.799     BOHR WITH   A(K=0) =    60.05592891     BOHR
+
+  ----------------------------------------------------------------------------------------------------------------------
+
+  EFV SET    30:  MAGNETIC Z FIELD =   350.9000000     GAUSS
+  REFERENCE ENERGY IS                          -9.5474180277E-02 CM-1    = -0.1373660430     K       
+
+  THRESHOLDS CALCULATED FROM ASYMPTOTIC HAMILTONIAN:
+
+  THRESHOLD       L           ENERGY/CM-1                ENERGY/K
+          1       0        -9.547418027659E-02        -0.137366042998    
+          2       0        -1.480013437709E-02        -2.129409112835E-02
+          3       0        -2.642389593344E-03        -3.801809048731E-03
+          4       0         6.495255161886E-02         9.345222941567E-02
+          5       0         6.587391152241E-02         9.477786074093E-02
+
+  K-DEPENDENT SCATTERING LENGTHS/VOLUMES/HYPERVOLUMES FOR CHANNELS WITH LOW KINETIC ENERGY
+  CHAN   L POW     WVEC*BOHR             RE(A)/BOHR            IM(A)/BOHR      
+    1    0   1 1.1520158795185E-004   6.0058792028553E+001  -4.8050810889951E-013
+
+  S-MATRIX EIGENPHASE SUM, EPSUM/PI =  9.99780
+
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+  K-DEPENDENT SCATTERING LENGTHS/VOLUMES/HYPERVOLUMES FOR CHANNELS WITH LOW KINETIC ENERGY
+  CHAN   L POW     WVEC*BOHR             RE(A)/BOHR            IM(A)/BOHR      
+    1    0   1 1.6291964813101E-004   6.0060535126188E+001  -4.7515469130657E-013
+
+  S-MATRIX EIGENPHASE SUM, EPSUM/PI =  9.99689
+
+  EFFECTIVE RANGE AT EFV SET  30 FOR CHANNEL   1:
+  FROM EXPANSION OF 1/A AT ENERGIES 1 AND   2 IS   72.823     BOHR WITH 1/A(K=0) =   0.1665083477E-01 BOHR^-1
+  FROM EXPANSION OF  A  AT ENERGIES 1 AND   2 IS   72.829     BOHR WITH   A(K=0) =    60.05704893     BOHR
+
+  ----------------------------------------------------------------------------------------------------------------------
+
+  EFV SET    31:  MAGNETIC Z FIELD =   351.0000000     GAUSS
+  REFERENCE ENERGY IS                          -9.5481417137E-02 CM-1    = -0.1373764552     K       
+
+  THRESHOLDS CALCULATED FROM ASYMPTOTIC HAMILTONIAN:
+
+  THRESHOLD       L           ENERGY/CM-1                ENERGY/K
+          1       0        -9.548141713654E-02        -0.137376455224    
+          2       0        -1.480014188997E-02        -2.129410193771E-02
+          3       0        -2.639991473494E-03        -3.798358689342E-03
+          4       0         6.495949023845E-02         9.346221254110E-02
+          5       0         6.588113335659E-02         9.478825134897E-02
+
+  K-DEPENDENT SCATTERING LENGTHS/VOLUMES/HYPERVOLUMES FOR CHANNELS WITH LOW KINETIC ENERGY
+  CHAN   L POW     WVEC*BOHR             RE(A)/BOHR            IM(A)/BOHR      
+    1    0   1 1.1520158793679E-004   6.0059908514989E+001   1.6516914799439E-013
+
+  S-MATRIX EIGENPHASE SUM, EPSUM/PI =  9.99780
+
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+  K-DEPENDENT SCATTERING LENGTHS/VOLUMES/HYPERVOLUMES FOR CHANNELS WITH LOW KINETIC ENERGY
+  CHAN   L POW     WVEC*BOHR             RE(A)/BOHR            IM(A)/BOHR      
+    1    0   1 1.6291964810971E-004   6.0061654157612E+001   1.2868772891235E-013
+
+  S-MATRIX EIGENPHASE SUM, EPSUM/PI =  9.99689
+
+  EFFECTIVE RANGE AT EFV SET  31 FOR CHANNEL   1:
+  FROM EXPANSION OF 1/A AT ENERGIES 1 AND   2 IS   72.927     BOHR WITH 1/A(K=0) =   0.1665052593E-01 BOHR^-1
+  FROM EXPANSION OF  A  AT ENERGIES 1 AND   2 IS   72.933     BOHR WITH   A(K=0) =    60.05816287     BOHR
+
+
+  ---- MOLSCAT ------ MOLSCAT ------ MOLSCAT ------ MOLSCAT ------ MOLSCAT ---
+ |                                                                            |
+ |                Non-reactive quantum scattering calculations                |
+ |                     on atomic and molecular collisions                     |
+ |                                                                            |
+ |              Copyright (C) 2020 J. M. Hutson & C. R. Le Sueur              |
+ |                                                                            |
+ |                               Version 2020.01                              |
+ |                                                                            |
+ |                    This run used       2.75 cpu secs and                   |
+ |                493 of the allocated   1000000 words of storage             |
+ |                                                                            |
+  ---- MOLSCAT ------ MOLSCAT ------ MOLSCAT ------ MOLSCAT ------ MOLSCAT ---
